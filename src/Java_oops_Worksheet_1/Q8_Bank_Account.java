@@ -14,7 +14,13 @@ public class Q8_Bank_Account {
 
     // Method to update the balance using 'this' keyword
     public void updateBalance(double amount) {
-        this.balance += amount; // 'this.balance' refers to the instance variable
+        if (amount <= 0) {
+            System.out.println("their cannot be negative value");
+        }
+        else {
+
+            this.balance += amount; // 'this.balance' refers to the instance variable
+        }
     }
 
     // Method to display account details
