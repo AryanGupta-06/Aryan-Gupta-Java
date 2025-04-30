@@ -11,7 +11,7 @@ interface IBankAccount {
 // Abstract Class
 abstract class BankAccount implements IBankAccount {
     protected double balance;
-    protected String accountNumber;
+    protected final String accountNumber;
 
     public BankAccount(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
